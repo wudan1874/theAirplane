@@ -1,4 +1,4 @@
-//COLORS
+
 var Colors = {
     red:0xf25346,
     white:0xd8d0d1,
@@ -10,9 +10,6 @@ var Colors = {
     green:0x000000,
 };
 
-///////////////
-
-// GAME VARIABLES
 var game;
 var deltaTime = 0;
 var newTime = new Date().getTime();
@@ -85,7 +82,7 @@ function resetGame(){
     fieldLevel.innerHTML = Math.floor(game.level);
 }
 
-//THREEJS RELATED VARIABLES
+
 
 var scene,
     camera, fieldOfView, aspectRatio, nearPlane, farPlane,
@@ -93,12 +90,12 @@ var scene,
     container,
     controls;
 
-//SCREEN & MOUSE VARIABLES
+
 
 var HEIGHT, WIDTH,
     mousePos = { x: 0, y: 0 };
 
-//INIT THREE JS, SCREEN AND MOUSE EVENTS
+
 
 function createScene() {
 
@@ -142,7 +139,7 @@ function createScene() {
     //*/
 }
 
-// MOUSE AND SCREEN EVENTS
+
 
 function handleWindowResize() {
     HEIGHT = window.innerHeight;
